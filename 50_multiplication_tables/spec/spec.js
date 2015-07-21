@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('twoTimesTable', function() {
   it('returns a String representing the "times" tables for 2', function() {

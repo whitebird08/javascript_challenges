@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('maximum', function() {
   it('returns the maximum value from the given array', function() {

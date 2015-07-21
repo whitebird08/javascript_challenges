@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('person', function() {
   it('returns an object with first_name = "John", last_name = "Mayer"', function() {

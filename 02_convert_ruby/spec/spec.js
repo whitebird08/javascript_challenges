@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('returnArray', function() {
   it('returns [1,2,3,4]', function() {

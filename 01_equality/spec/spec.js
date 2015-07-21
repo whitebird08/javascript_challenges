@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('sameLength', function() {
   it('returns true if the provided string arguments are the same length', function() {

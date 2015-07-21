@@ -1,4 +1,6 @@
 var yourCode = require('../src');
+var reporter = require('jasmine-galvanize-poster');
+jasmine.getEnv().addReporter(reporter);
 
 describe('twoByTwoIdentityMatrix', function() {
   it('returns the 2X2 identity matrix', function() {
