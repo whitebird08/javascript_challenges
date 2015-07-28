@@ -8,18 +8,18 @@ describe('first', function() {
     expect(yourCode.first(['foo', 'bar'])).toEqual('foo');
   });
 
-  xit('returns undefined when given an empty Array', function() {
+  it('returns undefined when given an empty Array', function() {
     expect(yourCode.first([])).toEqual(undefined);
   });
 });
 
 describe('last', function() {
 
-  xit('returns the last element for a given Array', function() {
+  it('returns the last element for a given Array', function() {
     expect(yourCode.last(['foo', 'monkey', 'bar'])).toEqual('bar');
   });
 
-  xit('returns undefined when given an empty Array', function() {
+  it('returns undefined when given an empty Array', function() {
     expect(yourCode.last([])).toEqual(undefined);
   });
 });
@@ -53,11 +53,11 @@ describe('last_n', function() {
     expect(yourCode.last_n([], 3)).toEqual([]);
   });
 
-  xit('returns as many elements as xit can when there are less than n', function() {
+  it('returns as many elements as xit can when there are less than n', function() {
     expect(yourCode.last_n([1,2], 3)).toEqual([1,2]);
   });
 
-  xit('returns the last n objects in the array', function() {
+  it('returns the last n objects in the array', function() {
     expect(yourCode.last_n([1,2,3,4,5], 3)).toEqual([3,4,5]);
   });
 });

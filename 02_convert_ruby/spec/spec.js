@@ -3,13 +3,13 @@ var reporter = require('jasmine-galvanize-poster');
 jasmine.getEnv().addReporter(reporter);
 
 describe('returnArray', function() {
-  it('returns [1,2,3,4]', function() {
+  xit('returns [1,2,3,4]', function() {
     expect(yourCode.returnArray()).toEqual([1,2,3,4]);
   });
 });
 
 describe('divide', function() {
-  xit('returns the result of division of the arguments', function() {
+  it('returns the result of division of the arguments', function() {
     expect(yourCode.divide(1,2)).toEqual(0.5);
     expect(yourCode.divide(1,0)).toEqual(Infinity);
     expect(yourCode.divide(Infinity,Infinity)).toEqual(NaN);
@@ -17,13 +17,13 @@ describe('divide', function() {
 });
 
 describe('add', function() {
-  xit('returns the result of addition of the arguments', function() {
+  it('returns the result of addition of the arguments', function() {
     expect(yourCode.add(1,2)).toEqual(3);
   });
 });
 
 describe('power', function() {
-  xit('returns the result of exponentiation of the arguments', function() {
+  it('returns the result of exponentiation of the arguments', function() {
     expect(yourCode.power(4,3)).toEqual(64);
   });
 });
