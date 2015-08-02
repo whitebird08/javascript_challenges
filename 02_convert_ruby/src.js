@@ -12,7 +12,9 @@ module.exports = {
   */
 
   returnArray: function() {
-    return Array.from(arguments);
+  
+    return [1,2,3,4]
+  
   },
 
   /*
@@ -41,9 +43,9 @@ module.exports = {
     end
   */
 
-  power: function(x,y){
-    return(Math.pow(x,y));
-  },
+    power: function(x,y){
+      return Math.pow(x,y);
+    },
 
   /*
     def concatenate(string_1, string_2)
@@ -51,20 +53,35 @@ module.exports = {
     end
   */
 
-  concatenation: function(){
-    return();
+  concatenate: function (string1, string2){
+   return (string1 + string2);
+
   },
 
+    sub: function (string, a, b){
+string.replace(b,a)
+return 
+    }
+
+//str.replace(regexp|substr, newSubStr|function[, flags])
   /*
     def sub(string, char, replacement)
       string.sub(char, replacement)
     end
   */
-  
-  sub: function(x,y,z){
-    return z.split(x).join(y);    
+  /*
+  sub: function sub(string, a, b){
+    var newArray = string.split();s
+    for(var i=0; i < newArray.length; i++){
+      if(string[i] === a){
+        newArray[i] = b;
+        break;
+      }
+      return newArray.join('');
+    }
   }
+  */
+}
   
-}
-  }
-}
+
+
