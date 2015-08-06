@@ -59,28 +59,17 @@ module.exports = {
   },
 
     sub: function (string, a, b){
-string.replace(b,a)
-return 
+      if (string.indexOf(a) >= 0){
+        var begin = string.indexOf(a)
+        var end = begin + a.length
+        return string.slice(0, begin) + b + string.slice(end, string.length)
+      
+      }
+
     }
 
-//str.replace(regexp|substr, newSubStr|function[, flags])
-  /*
-    def sub(string, char, replacement)
-      string.sub(char, replacement)
-    end
-  */
-  /*
-  sub: function sub(string, a, b){
-    var newArray = string.split();s
-    for(var i=0; i < newArray.length; i++){
-      if(string[i] === a){
-        newArray[i] = b;
-        break;
-      }
-      return newArray.join('');
-    }
-  }
-  */
+   
+
 }
   
 
